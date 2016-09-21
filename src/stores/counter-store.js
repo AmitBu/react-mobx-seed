@@ -12,7 +12,9 @@ export class CounterStore {
    }
 
    decrease() {
-      this.count--;
+      if (this.count > 0) {
+         this.count--;
+      }
    }
 }
 

@@ -3,10 +3,16 @@
     display: inline-block;
     padding: 0 5px;
     font-size: 24px;
-    color: #b4b9bb;
+    color: $primary-color;
 
     &.even {
       color: #353535;
     }
+  }
+
+  .type {
+    color: #919191;
+    font-size:14px;
+    font-style: italic;
   }
 }

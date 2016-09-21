@@ -5,11 +5,11 @@ import {observer} from 'mobx-react';
 @observer
 export default class Counter extends React.Component {
 	increaseCount = () => {
-		this.props.store.count++;
+		this.props.store.increase();
 	};
 
-	decreaseCount() {
-		this.props.store.count--;
+	decreaseCount = () => {
+		this.props.store.decrease();
 	};
 
 	render() {
@@ -17,11 +17,11 @@ export default class Counter extends React.Component {
 
 		return (
 			<div className="counter">
-				<button onClick={this.increaseCount}>+</button>
+				<button className="btn-increase" onClick={this.increaseCount}>+</button>
 				<span className={counter.isEven ? 'even' : 'odd'}>{counter.count}</span>
-				<button onClick={this.decreaseCount.bind(this)}>-</button>
+				<button className="btn-decrease" onClick={this.decreaseCount}>-</button>
 
-				<p>{ counter.isEven ? 'Even' : 'Odd' } number</p>
+				<p className="type">{ counter.isEven ? 'Even' : 'Odd' } number</p>
 			</div>
 		);
 	}

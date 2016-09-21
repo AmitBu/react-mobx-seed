@@ -1,5 +1,5 @@
 # react-mobx-seed
-A simple started project for react + mobx applications
+A simple started project for react + mobx applications using webpack
 
 >Warning: Make sure you're using the latest version of Node.js and NPM
 
@@ -8,7 +8,7 @@ A simple started project for react + mobx applications
 > Clone/Download the repo then edit `main.js` inside [`/src/main.js`](/src/main.js)
 
 ```bash
-# clone our repo
+# clone the repo
 $ git clone https://github.com/AmitBu/react-mobx-seed.git new-app
 
 # change directory to your app
@@ -21,7 +21,7 @@ $ npm install
 $ npm start
 ```
 
-go to [http://localhost:8080](http://localhost:8000) in your browser.
+go to [http://localhost:8000](http://localhost:8000) in your browser.
 
 ### Build for production
 ```bash

@@ -1,4 +1,4 @@
-import { TodoStore } from "../src/store/todo-store"
+import { TodoStore } from "../src/stores/todo-store"
 
 describe("TodoStore", () => {
 	// beforeEach(function() {

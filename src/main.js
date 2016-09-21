@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './components/counter';
+import Counter from './components/counter/counter';
 
-import counterStore from './store/counter-store'
+import CounterStore from './stores/counter-store'
 
 import './styles/style.scss'
 
-ReactDOM.render(<Counter store={counterStore}/>, document.querySelector('#app'));
+ReactDOM.render((
+	<div>
+		<h1>Counter sample app</h1>
+		<Counter store={CounterStore}/>
+	</div>
+), document.querySelector('#app'));

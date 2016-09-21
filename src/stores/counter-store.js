@@ -3,8 +3,8 @@ import { computed, observable } from 'mobx'
 export class CounterStore {
    @observable count = 0;
 
-   @computed get unfinishedTodos() {
-      return this.todos.filter(todo => !todo.checked).length;
+   @computed get isEven() {
+      return this.count % 2 === 0;
    }
 
    increase() {

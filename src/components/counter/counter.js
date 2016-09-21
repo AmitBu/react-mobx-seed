@@ -16,11 +16,12 @@ export default class Counter extends React.Component {
 		let counter = this.props.store;
 
 		return (
-			<div>
-				<h1>Todo list</h1>
-				{counter.count}
+			<div className="counter">
 				<button onClick={this.increaseCount}>+</button>
+				<span className={counter.isEven ? 'even' : 'odd'}>{counter.count}</span>
 				<button onClick={this.decreaseCount.bind(this)}>-</button>
+
+				<p>{ counter.isEven ? 'Even' : 'Odd' } number</p>
 			</div>
 		);
 	}

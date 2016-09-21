@@ -1,0 +1,12 @@
+.counter {
+  span {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 24px;
+    color: #b4b9bb;
+
+    &.even {
+      color: #353535;
+    }
+  }
+}

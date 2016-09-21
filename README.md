@@ -17,7 +17,7 @@ $ cd new-app
 # install the dependencies with npm
 $ npm install
 
-# start the server
+# start the server using 'webpack-dev-server'
 $ npm start
 ```
 
